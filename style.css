@@ -7,7 +7,7 @@
 body {
   background: linear-gradient(135deg, #5454864c, #16213e);
   height: 100vh;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 .center {
@@ -34,8 +34,18 @@ body {
   color: white;
 }
 
-#weather-result * {
+#weather-result p {
   font-size: 30px;
+}
+
+h2 {
+  font-size: 35px;
+  /* position: absolute;
+  top: 90px; */
+}
+
+img {
+  position: relative;
 }
 
 input {
@@ -45,6 +55,7 @@ input {
   font-size: 30px;
   border: 2px solid white;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .title input {
@@ -56,3 +67,13 @@ input {
   right: 20px;
   top: 0px;
 } */
+@media (max-width: 394px) {
+  #weather-result p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  .center {
+    width: 330px;
+  }
+}

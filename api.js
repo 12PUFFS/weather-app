@@ -40,7 +40,8 @@ function getWeather() {
         // Сохраняем город только после успешного запроса
         localStorage.setItem('lastCity', city);
       } else {
-        weatherResult.innerHTML = '<p>Город не найден</p>';
+        weatherResult.innerHTML =
+          '<p style="position: absolute;  top: 50%; left: 50%; transform: translate(-50%, -50%);">Город не найден</p>';
       }
     })
     .catch((error) => {
