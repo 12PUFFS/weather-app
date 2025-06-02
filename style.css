@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #5454864c, #16213e);
+  /* background: linear-gradient(135deg, #5454864c, #16213e); */
   height: 100vh;
   font-family: monospace;
 }
@@ -54,12 +54,27 @@ input {
   border-radius: 20px;
   font-size: 30px;
   border: 2px solid white;
-  text-align: center;
+  align-items: center;
   text-transform: capitalize;
 }
 
 .title input {
   position: relative;
+}
+
+#switch-bg {
+  position: absolute;
+  padding: 20px;
+  font-size: 30px;
+  right: 20px;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: none;
+  border-color: white;
+  background: white;
+
+  border: none;
 }
 
 /* #search-btn {
